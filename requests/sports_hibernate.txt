@@ -1,0 +1,11 @@
+POST /restapi/getUserSports2 HTTP/1.1
+Host: debian:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept: application/json
+Accept-Language: null
+Content-Type: application/json
+Content-Length: 35
+Cookie: JSESSIONID=DB4E197A60F507E1F36667433BB3B8C2
+Connection: close
+
+{"login":"user1","password":"pwd1"}
